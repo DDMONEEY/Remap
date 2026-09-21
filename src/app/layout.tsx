@@ -82,7 +82,7 @@ const jsonLd = {
         "addressRegion": "PR",
         "addressCountry": "BR"
       },
-      "telephone": "+5544998243321",
+      "telephone": "+5544991413671",
       "url": "https://planetxtune.com.br",
       "sameAs": [
         "https://www.instagram.com/planet.xtune.ecu/"

@@ -38,8 +38,8 @@ export const SITE_CONFIG = {
   shortName: "XTUNE",
   tagline: "PERFORMANCE SEM LIMITES.",
   subheadline: "Tecnologia, precisão e experiência para extrair o máximo da sua motocicleta.",
-  phone: "(44) 99824-3321", // Telefone de contato editável
-  whatsappNumber: "5544998243321",
+  phone: "(44) 99141-3671", // Telefone oficial WhatsApp
+  whatsappNumber: "5544991413671",
   whatsappDefaultMsg: "Olá! Conheci a XTune ECU pelo site oficial e gostaria de falar sobre um projeto de remap e performance para minha moto.",
   instagram: {
     handle: "@planet.xtune.ecu",
