@@ -25,15 +25,15 @@ export default function Footer() {
               <div className="relative w-12 h-10 overflow-hidden rounded bg-black/50 border border-[#2A2A38] p-0.5">
                 <Image
                   src="/images/logo-xt.jpg"
-                  alt="Planet Xtune Logo"
+                  alt="XTune ECU Logo"
                   width={48}
                   height={40}
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
-                <span className="font-display font-bold text-2xl tracking-wider text-white">
-                  PLANET <span className="text-xt-red">XTUNE</span> <span className="text-xs font-mono text-xt-red bg-xt-red/10 px-1.5 py-0.5 rounded border border-xt-red/30">ECU</span>
+                <span className="font-display font-extrabold text-2xl tracking-wider text-white">
+                  XTUNE <span className="text-xt-red">ECU</span>
                 </span>
                 <p className="text-[10px] font-mono tracking-widest text-[#8E8EA0] uppercase">
                   PERFORMANCE SEM LIMITES
@@ -158,7 +158,7 @@ export default function Footer() {
 
         {/* Bottom copyright line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#6E6E82]">
-          <p>© {currentYear} Planet Xtune ECU. Todos os direitos reservados.</p>
+          <p>© {currentYear} XTune ECU. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
             <span>ECU CALIBRATION & HARDWARE</span>
             <span className="text-[#3A3A4A]">•</span>

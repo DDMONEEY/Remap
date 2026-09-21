@@ -8,7 +8,7 @@ import { SITE_CONFIG } from "@/data/site-content";
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-    "Olá! Conheci a Planet Xtune pelo site e quero saber mais sobre preparação/remap para minha moto."
+    "Olá! Conheci a XTune ECU pelo site e quero saber mais sobre preparação/remap para minha moto."
   )}`;
 
   return (
@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/xt-banner.jpg"
-          alt="Planet Xtune ECU Background"
+          alt="XTune ECU Background"
           fill
           priority
           className="object-cover object-center opacity-30"
@@ -55,7 +55,7 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-xt-red" />
           </span>
           <span className="text-[11px] sm:text-xs font-mono font-semibold tracking-widest text-[#D0D0E2] uppercase">
-            PLANET XTUNE ECU // LAB & COMPETIÇÃO
+            XTUNE ECU // LAB & COMPETIÇÃO
           </span>
         </div>
 

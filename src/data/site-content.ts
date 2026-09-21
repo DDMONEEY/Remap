@@ -28,19 +28,19 @@ export interface FAQItem {
 export interface BrandItem {
   name: string;
   type: "ecu" | "bike";
-  logoImage?: string;
+  logoKey: "fueltech" | "injepro" | "athlon" | "servitec" | "bmw" | "yamaha" | "kawasaki" | "ducati" | "honda" | "triumph";
   accent: string;
   description: string;
 }
 
 export const SITE_CONFIG = {
-  name: "Planet Xtune ECU",
+  name: "XTune ECU",
   shortName: "XTUNE",
   tagline: "PERFORMANCE SEM LIMITES.",
   subheadline: "Tecnologia, precisão e experiência para extrair o máximo da sua motocicleta.",
   phone: "(44) 99824-3321", // Telefone de contato editável
   whatsappNumber: "5544998243321",
-  whatsappDefaultMsg: "Olá! Conheci a Planet Xtune pelo site oficial e gostaria de falar sobre um projeto de remap e performance para minha moto.",
+  whatsappDefaultMsg: "Olá! Conheci a XTune ECU pelo site oficial e gostaria de falar sobre um projeto de remap e performance para minha moto.",
   instagram: {
     handle: "@planet.xtune.ecu",
     url: "https://www.instagram.com/planet.xtune.ecu/",
@@ -52,7 +52,7 @@ export const SITE_CONFIG = {
     state: "PR",
     country: "Brasil",
     label: "Maringá, Paraná — Atendimento Nacional",
-    mapsUrl: "https://maps.google.com/?q=Maringa+Parana+Planet+Xtune",
+    mapsUrl: "https://maps.google.com/?q=Maringa+Parana+XTune+Xtune",
     schedule: "Segunda a Sexta: 08:30 às 18:00 | Sábado: Projetos com agendamento",
   },
   stats: [
@@ -153,7 +153,7 @@ export const SERVICES: ServiceItem[] = [
     id: "solucoes-xtune",
     number: "07",
     title: "SOLUÇÕES XTUNE",
-    shortDesc: "Softwares e ferramentas desenvolvidos pela Planet Xtune.",
+    shortDesc: "Softwares e ferramentas desenvolvidos pela XTune ECU.",
     fullDesc: "Desenvolvimento proprietário de ferramentas de calibração, softwares dedicados (como a linha XTune Lite) e pinagens exclusivas para centrais do mercado brasileiro.",
     category: "custom",
     tags: ["Software Próprio", "Pinagem", "Engenharia"]
@@ -174,7 +174,7 @@ export const XTUNE_LITE_PRODUCT = {
   badge: "SOFTWARE EXCLUSIVO XTUNE",
   tagline: "Software Honda Denso Baixa Cilindrada",
   headline: "A Ferramenta Definitiva para Leitura, Edição e Gravação de ECU Honda",
-  description: "Desenvolvido pela Planet Xtune ECU, o XTune Lite é uma ferramenta técnica projetada para oficinas, preparadores e entusiastas que buscam autonomia e precisão na reprogramação de motocicletas Honda de baixa e média cilindrada.",
+  description: "Desenvolvido pela XTune ECU, o XTune Lite é uma ferramenta técnica projetada para oficinas, preparadores e entusiastas que buscam autonomia e precisão na reprogramação de motocicletas Honda de baixa e média cilindrada.",
   price: "R$ 1.500,00",
   features: [
     { title: "Leitura Completa", desc: "Extração íntegra do mapa da ECU original com alta velocidade e segurança." },
@@ -194,16 +194,17 @@ export const XTUNE_LITE_PRODUCT = {
 
 export const BRANDS_ECOSYSTEM: BrandItem[] = [
   // Sistemas de Gerenciamento / ECU
-  { name: "FuelTech", type: "ecu", accent: "#E50914", logoImage: "/images/brands/fueltech-highlight.jpg", description: "Módulos FT450, FT550 e FT600 com acerto e chicotes dedicados." },
-  { name: "InjePro", type: "ecu", accent: "#FF5722", description: "Injeções programáveis EFI-Light, T-Series e soluções de telemetria." },
-  { name: "Athlon", type: "ecu", accent: "#3B82F6", description: "Centrais plug-and-play e módulos de alta precisão para motocicletas." },
-  { name: "Servitec", type: "ecu", accent: "#8B5CF6", description: "CDIs programáveis, limitadores e sistemas eletrônicos avançados." },
+  { name: "FuelTech", type: "ecu", logoKey: "fueltech", accent: "#E50914", description: "Módulos FT450, FT550 e FT600 com acerto e chicotes dedicados." },
+  { name: "InjePro", type: "ecu", logoKey: "injepro", accent: "#FF5722", description: "Injeções programáveis EFI-Light, T-Series e telemetria." },
+  { name: "Athlon", type: "ecu", logoKey: "athlon", accent: "#3B82F6", description: "Centrais plug-and-play e módulos de alta precisão para motos." },
+  { name: "Servitec", type: "ecu", logoKey: "servitec", accent: "#8B5CF6", description: "CDIs programáveis, limitadores e sistemas eletrônicos." },
   // Marcas de Motocicletas
-  { name: "BMW Motorrad", type: "bike", accent: "#0066B1", logoImage: "/images/brands/bmw-highlight.jpg", description: "S1000RR, S1000R, F850GS, R1250GS e linha esportiva completa." },
-  { name: "Yamaha", type: "bike", accent: "#00205B", logoImage: "/images/brands/yamaha-highlight.jpg", description: "YZF-R1, MT-09, MT-07, YZF-R3 e motos de alta performance." },
-  { name: "Kawasaki", type: "bike", accent: "#69BE28", logoImage: "/images/brands/kawasaki-highlight.jpg", description: "Ninja ZX-10R, ZX-6R (Recordista Nacional), Z900, Z1000." },
-  { name: "Ducati", type: "bike", accent: "#CC0000", logoImage: "/images/brands/ducati-highlight.jpg", description: "Panigale V4, V2, Streetfighter, Monster e linha Desmosedici." },
-  { name: "Honda", type: "bike", accent: "#E4002B", description: "CBR 1000RR-R Fireblade, CB 650R, CB 500F, linha 160/300 Denso." },
+  { name: "BMW Motorrad", type: "bike", logoKey: "bmw", accent: "#0066B1", description: "S1000RR, S1000R, F850GS, R1250GS e linha completa." },
+  { name: "Yamaha", type: "bike", logoKey: "yamaha", accent: "#E60012", description: "YZF-R1, MT-09, MT-07, YZF-R3 e linha esportiva." },
+  { name: "Kawasaki", type: "bike", logoKey: "kawasaki", accent: "#69BE28", description: "Ninja ZX-10R, ZX-6R (Recordista Nacional), Z900, Z1000." },
+  { name: "Ducati", type: "bike", logoKey: "ducati", accent: "#CC0000", description: "Panigale V4, V2, Streetfighter, Monster e Desmosedici." },
+  { name: "Honda", type: "bike", logoKey: "honda", accent: "#E4002B", description: "CBR 1000RR-R Fireblade, CB 650R, linha 160/300 Denso." },
+  { name: "Triumph", type: "bike", logoKey: "triumph", accent: "#D4AF37", description: "Street Triple 765, Speed Triple 1200, Tiger 900 e 1200." },
 ];
 
 export const PROJECTS: ProjectItem[] = [
@@ -297,7 +298,7 @@ export const GALLERY_ITEMS = [
   },
   {
     id: "gal-6",
-    title: "Equipe Técnica Planet Xtune",
+    title: "Equipe Técnica XTune ECU",
     caption: "Corpo técnico especializado em eletrônica, bancada e performance de motocicletas.",
     image: "/images/about/xtune-team.jpg",
     category: "Equipe"
@@ -349,11 +350,11 @@ export const FAQ_LIST: FAQItem[] = [
   },
   {
     question: "É possível fazer remap em moto já modificada (escape esportivo, filtro de ar)?",
-    answer: "Sim, e é justamente onde o remap é mais recomendado! Quando você instala um escapamento esportivo ou filtro de ar de alto fluxo, a proporção ar/combustível da moto tende a empobrecer, o que causa superaquecimento das válvulas e perda de resposta. O remap da Planet Xtune calibra o mapa especificamente para a nova vazão mecânica.",
+    answer: "Sim, e é justamente onde o remap é mais recomendado! Quando você instala um escapamento esportivo ou filtro de ar de alto fluxo, a proporção ar/combustível da moto tende a empobrecer, o que causa superaquecimento das válvulas e perda de resposta. O remap da XTune ECU calibra o mapa especificamente para a nova vazão mecânica.",
     category: "geral"
   },
   {
-    question: "A Planet Xtune trabalha com módulos programáveis FuelTech e InjePro?",
+    question: "A XTune ECU trabalha com módulos programáveis FuelTech e InjePro?",
     answer: "Sim! Somos especialistas na instalação, configuração e acerto fino de injeções programáveis FuelTech (FT450, FT550, etc.) e InjePro para motos de arrancada, circuito fechado, track days e projetos personalizados, com desenvolvimento de chicotes dedicados e calibração de bancada.",
     category: "tecnico"
   },
@@ -369,12 +370,12 @@ export const FAQ_LIST: FAQItem[] = [
   },
   {
     question: "Quanto de potência minha moto vai ganhar com o remap?",
-    answer: "Os ganhos variam conforme a cilindrada, arquitetura do motor (2, 3 ou 4 cilindros) e modificações existentes (escapamento, filtro). Mais do que apenas o pico de cavalaria máxima, o maior benefício do remap Planet Xtune é a curva de torque preenchida em baixas e médias rotações e a resposta sem engasgos do acelerador. Uma avaliação técnica prévia indicará as estimativas realistas para o seu modelo.",
+    answer: "Os ganhos variam conforme a cilindrada, arquitetura do motor (2, 3 ou 4 cilindros) e modificações existentes (escapamento, filtro). Mais do que apenas o pico de cavalaria máxima, o maior benefício do remap XTune ECU é a curva de torque preenchida em baixas e médias rotações e a resposta sem engasgos do acelerador. Uma avaliação técnica prévia indicará as estimativas realistas para o seu modelo.",
     category: "tecnico"
   },
   {
     question: "Cada motocicleta recebe um acerto individualizado?",
-    answer: "Sim. Na Planet Xtune repudiamos o uso de mapas genéricos copiados. Cada moto possui desgastes, tolerâncias, combustível utilizado e preferências de pilotagem únicas. O mapa é refinado e validado considerando todos os detalhes do seu conjunto.",
+    answer: "Sim. Na XTune ECU repudiamos o uso de mapas genéricos copiados. Cada moto possui desgastes, tolerâncias, combustível utilizado e preferências de pilotagem únicas. O mapa é refinado e validado considerando todos os detalhes do seu conjunto.",
     category: "processo"
   },
   {
@@ -385,11 +386,12 @@ export const FAQ_LIST: FAQItem[] = [
 ];
 
 export const BIKE_BRANDS_SELECTOR = [
-  { name: "BMW", label: "BMW Motorrad", image: "/images/brands/bmw-highlight.jpg", popular: "S1000RR / F850GS / R1250GS" },
-  { name: "Yamaha", label: "Yamaha", image: "/images/brands/yamaha-highlight.jpg", popular: "MT-09 / R1 / MT-07 / R3" },
-  { name: "Kawasaki", label: "Kawasaki", image: "/images/brands/kawasaki-highlight.jpg", popular: "ZX-6R / ZX-10R / Z900 / Z1000" },
-  { name: "Ducati", label: "Ducati", image: "/images/brands/ducati-highlight.jpg", popular: "Panigale V4 / V2 / Streetfighter" },
-  { name: "Honda", label: "Honda", image: null, popular: "CBR 1000RR / CB 650R / 160 / 300 Denso" },
-  { name: "Outras", label: "Outras Marcas", image: null, popular: "Triumph, Suzuki, KTM, etc." },
+  { name: "BMW", label: "BMW Motorrad", popular: "S1000RR / F850GS / R1250GS" },
+  { name: "Yamaha", label: "Yamaha", popular: "MT-09 / R1 / MT-07 / R3" },
+  { name: "Kawasaki", label: "Kawasaki", popular: "ZX-6R / ZX-10R / Z900 / Z1000" },
+  { name: "Ducati", label: "Ducati", popular: "Panigale V4 / V2 / Streetfighter" },
+  { name: "Honda", label: "Honda", popular: "CBR 1000RR / CB 650R / 160 / 300 Denso" },
+  { name: "Triumph", label: "Triumph", popular: "Street Triple / Speed Triple / Tiger" },
+  { name: "Outras", label: "Outras Marcas", popular: "Suzuki, KTM, MV Agusta, etc." },
 ];
 

@@ -50,7 +50,7 @@ export default function Navbar() {
               <div className="relative w-11 h-9 sm:w-12 sm:h-10 overflow-hidden rounded bg-black/60 border border-[#2A2A38] group-hover:border-xt-red transition-colors flex items-center justify-center p-0.5 shrink-0">
                 <Image
                   src="/images/logo-xt.jpg"
-                  alt="Planet Xtune Logo"
+                  alt="XTune ECU Logo"
                   width={48}
                   height={40}
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-200"
@@ -58,11 +58,8 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col shrink-0">
                 <div className="flex items-center gap-1.5">
-                  <span className="font-display font-bold text-lg sm:text-xl md:text-2xl tracking-wider text-white group-hover:text-xt-red transition-colors whitespace-nowrap">
-                    PLANET <span className="text-xt-red">XTUNE</span>
-                  </span>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 bg-xt-red/10 text-xt-red border border-xt-red/30 rounded font-semibold tracking-widest shrink-0">
-                    ECU
+                  <span className="font-display font-extrabold text-xl sm:text-2xl tracking-wider text-white whitespace-nowrap">
+                    XTUNE <span className="text-xt-red">ECU</span>
                   </span>
                 </div>
                 <span className="text-[9px] font-mono tracking-widest text-[#8E8EA0] uppercase whitespace-nowrap">

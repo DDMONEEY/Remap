@@ -30,7 +30,7 @@ export default function MobileMenu({
           <div className="relative w-12 h-10 overflow-hidden rounded bg-black/40 border border-[#2A2A38] flex items-center justify-center p-0.5">
             <Image
               src="/images/logo-xt.jpg"
-              alt="Planet Xtune Logo"
+              alt="XTune ECU Logo"
               width={48}
               height={40}
               className="object-cover w-full h-full"
@@ -38,11 +38,8 @@ export default function MobileMenu({
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-display font-bold text-xl tracking-wider text-white">
-                PLANET <span className="text-xt-red">XTUNE</span>
-              </span>
-              <span className="text-[10px] font-mono px-1 py-0.5 bg-xt-red/10 text-xt-red border border-xt-red/30 rounded font-semibold tracking-widest">
-                ECU
+              <span className="font-display font-extrabold text-xl tracking-wider text-white">
+                XTUNE <span className="text-xt-red">ECU</span>
               </span>
             </div>
             <p className="text-[9px] font-mono text-[#8E8EA0] uppercase tracking-widest">

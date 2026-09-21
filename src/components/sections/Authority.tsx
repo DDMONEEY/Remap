@@ -42,7 +42,7 @@ export default function Authority() {
               <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black">
                 <Image
                   src="/images/projects/record-600cc.jpg"
-                  alt="Recorde Nacional 600cc Planet Xtune"
+                  alt="Recorde Nacional 600cc XTune ECU"
                   fill
                   className="object-cover object-center filter brightness-95 contrast-110"
                   sizes="(max-width: 768px) 100vw, 480px"

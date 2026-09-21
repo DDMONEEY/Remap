@@ -67,7 +67,7 @@ export default function QuoteForm({ selectedBrand }: QuoteFormProps) {
     e.preventDefault();
 
     // Prepare structured message for WhatsApp
-    const message = `*SOLICITAÇÃO DE AVALIAÇÃO — PLANET XTUNE ECU*
+    const message = `*SOLICITAÇÃO DE AVALIAÇÃO — XTUNE ECU*
 ---------------------------------------
 *Cliente:* ${formData.nome || "Não informado"}
 *WhatsApp:* ${formData.whatsapp || "Não informado"}
@@ -137,7 +137,7 @@ ${formData.mensagem || "Avaliação técnica geral"}`;
               </h3>
 
               <p className="mt-3 text-sm text-[#A0A0B8] max-w-md">
-                Os dados da sua moto foram organizados e a conversa no WhatsApp oficial da Planet Xtune foi iniciada. Caso a janela não tenha aberto, utilize o botão abaixo:
+                Os dados da sua moto foram organizados e a conversa no WhatsApp oficial da XTune ECU foi iniciada. Caso a janela não tenha aberto, utilize o botão abaixo:
               </p>
 
               <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">

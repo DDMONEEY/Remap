@@ -95,7 +95,7 @@ export default function FAQ() {
 
           <a
             href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-              "Olá! Estive no site da Planet Xtune e fiquei com uma dúvida técnica sobre remap da minha moto."
+              "Olá! Estive no site da XTune ECU e fiquei com uma dúvida técnica sobre remap da minha moto."
             )}`}
             target="_blank"
             rel="noopener noreferrer"

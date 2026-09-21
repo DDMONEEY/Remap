@@ -10,11 +10,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://planetxtune.com.br"),
-  title: "Planet Xtune ECU — Performance Sem Limites | Remap, Acerto & Eletrônica",
+  title: "XTune ECU — Performance Sem Limites | Remap, Acerto & Eletrônica",
   description: "Especialistas em alta performance de motocicletas. Remap de ECU, calibração em dinamômetro, FuelTech, InjePro, desenvolvimento de softwares e soluções eletrônicas. Recordista Nacional 600cc.",
   keywords: [
-    "Planet Xtune ECU",
-    "Planet Xtune",
+    "XTune ECU",
+    "XTune ECU",
     "Remap de motos",
     "Remap moto Maringá",
     "Remap ECU Maringá",
@@ -31,25 +31,25 @@ export const metadata: Metadata = {
     "Remap Kawasaki Ninja",
     "Remap Ducati"
   ],
-  authors: [{ name: "Planet Xtune ECU" }],
-  creator: "Planet Xtune ECU",
-  publisher: "Planet Xtune ECU",
+  authors: [{ name: "XTune ECU" }],
+  creator: "XTune ECU",
+  publisher: "XTune ECU",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "Planet Xtune ECU — Performance Sem Limites",
+    title: "XTune ECU — Performance Sem Limites",
     description: "Tecnologia, precisão e experiência para extrair o máximo da sua motocicleta. Remap, Dinamômetro, FuelTech e InjePro.",
     url: "https://planetxtune.com.br",
-    siteName: "Planet Xtune ECU",
+    siteName: "XTune ECU",
     images: [
       {
         url: "/images/xt-banner.jpg",
         width: 1024,
         height: 465,
-        alt: "Planet Xtune ECU — Performance Sem Limites",
+        alt: "XTune ECU — Performance Sem Limites",
       },
     ],
     locale: "pt_BR",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Planet Xtune ECU — Performance Sem Limites",
+    title: "XTune ECU — Performance Sem Limites",
     description: "Especialistas em alta performance de motocicletas. Remap de ECU, FuelTech, InjePro e Recorde Nacional 600cc.",
     images: ["/images/xt-banner.jpg"],
   },
@@ -73,7 +73,7 @@ const jsonLd = {
     {
       "@type": "AutoRepair",
       "@id": "https://planetxtune.com.br/#business",
-      "name": "Planet Xtune ECU",
+      "name": "XTune ECU",
       "image": "https://planetxtune.com.br/images/xt-banner.jpg",
       "description": "Centro especializado em eletrônica de alta performance, remap de ECU, FuelTech, InjePro e calibração de motocicletas de alta cilindrada.",
       "address": {

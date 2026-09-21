@@ -39,7 +39,7 @@ export default function InstagramFeed() {
     {
       id: "ig-5",
       image: "/images/xt-banner.jpg",
-      caption: "Power, Speed, Control. Identidade oficial Planet Xtune ECU.",
+      caption: "Power, Speed, Control. Identidade oficial XTune ECU.",
       likes: "1.890",
       comments: "112",
     },
@@ -61,7 +61,7 @@ export default function InstagramFeed() {
             <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-xt-red p-0.5 shadow-glow-red">
               <Image
                 src="/images/xt-avatar.jpg"
-                alt="Planet Xtune Instagram Avatar"
+                alt="XTune ECU Instagram Avatar"
                 fill
                 className="object-cover rounded-full"
               />
@@ -112,7 +112,7 @@ export default function InstagramFeed() {
             >
               <Image
                 src={post.image}
-                alt="Planet Xtune Instagram Post"
+                alt="XTune ECU Instagram Post"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 16vw"

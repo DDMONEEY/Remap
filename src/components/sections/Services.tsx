@@ -50,7 +50,7 @@ export default function Services() {
 
           <a
             href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-              "Olá! Gostaria de consultar os serviços de remap e eletrônica da Planet Xtune."
+              "Olá! Gostaria de consultar os serviços de remap e eletrônica da XTune ECU."
             )}`}
             target="_blank"
             rel="noopener noreferrer"

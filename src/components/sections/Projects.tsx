@@ -35,7 +35,7 @@ export default function Projects() {
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-[#9E9EB2] leading-relaxed">
-            Projetos reais desenvolvidos pela Planet Xtune ECU. De motos de recorde nacional de pista a acertos de bancada e softwares proprietários.
+            Projetos reais desenvolvidos pela XTune ECU. De motos de recorde nacional de pista a acertos de bancada e softwares proprietários.
           </p>
         </div>
 

@@ -31,7 +31,7 @@ export default function Positioning() {
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-[#9E9EB2] leading-relaxed">
-            Cada moto possui uma configuração, uma proposta e uma necessidade diferente. A Planet Xtune trabalha com eletrônica, calibração e performance para encontrar o melhor resultado para cada projeto.
+            Cada moto possui uma configuração, uma proposta e uma necessidade diferente. A XTune ECU trabalha com eletrônica, calibração e performance para encontrar o melhor resultado para cada projeto.
           </p>
         </div>
 

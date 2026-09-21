@@ -66,7 +66,7 @@ export default function BehindTheScenes() {
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-black">
                 <Image
                   src="/images/about/xtune-team.jpg"
-                  alt="Equipe Planet Xtune ECU"
+                  alt="Equipe XTune ECU"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
                   sizes="(max-width: 768px) 100vw, 450px"
@@ -77,7 +77,7 @@ export default function BehindTheScenes() {
                     LABORATÓRIO & PISTA
                   </span>
                   <p className="font-display font-bold text-lg text-white mt-1">
-                    Equipe Planet Xtune ECU
+                    Equipe XTune ECU
                   </p>
                   <p className="text-xs text-[#A8A8BF]">
                     Profissionais dedicados exclusivamente à eletrônica e acerto de motos.
@@ -91,7 +91,7 @@ export default function BehindTheScenes() {
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-black">
                 <Image
                   src="/images/projects/dyno-tuning.jpg"
-                  alt="Dinamômetro Planet Xtune"
+                  alt="Dinamômetro XTune ECU"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
                   sizes="(max-width: 768px) 100vw, 450px"
