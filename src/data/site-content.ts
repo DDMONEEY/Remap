@@ -243,7 +243,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Plataforma XTune Lite Honda",
     subtitle: "Software Dedicado para ECU Denso Baixa CC",
     category: "Software Proprietário",
-    image: "/images/products/xtune-lite-laptop.jpg",
+    image: "/images/projects/honda-ecu-tuning.jpg",
     tags: ["Honda 160", "Sahara 300", "Tornado 300", "Denso"],
     description: "Software autônomo com suporte para a nova linha Honda 2022+ com central Denso. Inclui rotinas de leitura direta, edição paramétrica e gravação segura sem necessidade de cortes no chicote original.",
     highlight: "INOVAÇÃO BRASIL"

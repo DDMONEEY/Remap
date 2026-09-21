@@ -10,7 +10,6 @@ import Services from "@/components/sections/Services";
 import XtuneLite from "@/components/sections/XtuneLite";
 import BrandsEco from "@/components/sections/BrandsEco";
 import Projects from "@/components/sections/Projects";
-import Gallery from "@/components/sections/Gallery";
 import BehindTheScenes from "@/components/sections/BehindTheScenes";
 import Authority from "@/components/sections/Authority";
 import SelectBike from "@/components/sections/SelectBike";
@@ -49,10 +48,7 @@ export default function Home() {
       {/* 7. Results & Projects: Recordista 600cc, Dyno, etc. */}
       <Projects />
 
-      {/* 8. Editorial Motorsport Gallery with Lightbox */}
-      <Gallery />
-
-      {/* 9. "Por Trás da Performance": Dyno, Bench, Team */}
+      {/* 8. "Por Trás da Performance": Dyno, Bench, Team */}
       <BehindTheScenes />
 
       {/* 10. Authority: Credentials & National Records */}
