@@ -31,8 +31,8 @@ export default function InstagramFeed() {
     },
     {
       id: "ig-4",
-      image: "/images/products/xtune-lite-laptop.jpg",
-      caption: "XTune Lite: Ferramenta técnica para centrais Honda Denso 2022+.",
+      image: "/images/gallery/bmw-s1000rr.jpg",
+      caption: "BMW S1000RR no dyno. Liberação de potência e ajuste de mapas de pista.",
       likes: "1.520",
       comments: "138",
     },

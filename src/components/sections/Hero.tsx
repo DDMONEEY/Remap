@@ -12,7 +12,7 @@ export default function Hero() {
   )}`;
 
   return (
-    <section className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#060608]">
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#060608]">
       {/* Background Banner with grunge / graffiti identity */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -20,20 +20,16 @@ export default function Hero() {
           alt="Planet Xtune ECU Background"
           fill
           priority
-          className="object-cover object-center opacity-30 sm:opacity-35 scale-105 filter brightness-75 contrast-125"
+          className="object-cover object-center opacity-30"
           sizes="100vw"
         />
-        {/* Gradient overlays for cinematic depth and readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#060608] via-[#060608]/70 to-[#060608]/90" />
+        {/* Lightweight gradient overlays without expensive GPU blur */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#060608] via-[#060608]/75 to-[#060608]/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#060608] via-transparent to-[#060608]" />
-        
-        {/* Neon & atmospheric lighting accents */}
-        <div className="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-xt-red/15 rounded-full blur-[140px] pointer-events-none" />
-        <div className="absolute top-1/3 -right-24 w-[450px] h-[450px] bg-xt-purple/20 rounded-full blur-[150px] pointer-events-none" />
       </div>
 
       {/* Engineering tech grid overlay */}
-      <div className="absolute inset-0 bg-tech-grid opacity-30 pointer-events-none" />
+      <div className="absolute inset-0 bg-tech-grid opacity-25 pointer-events-none" />
 
       {/* Decorative vertical HUD lines */}
       <div className="hidden lg:block absolute left-8 top-1/4 bottom-1/4 w-px bg-gradient-to-b from-transparent via-[#2E2E40] to-transparent pointer-events-none">
@@ -53,7 +49,7 @@ export default function Hero() {
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Top badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#12121A]/80 border border-[#2A2A3C] shadow-lg mb-6 backdrop-blur-sm">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#12121A] border border-[#2A2A3C] shadow-lg mb-6">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-xt-red opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-xt-red" />
@@ -64,10 +60,10 @@ export default function Hero() {
         </div>
 
         {/* Primary Impact Headline */}
-        <h1 className="font-display font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight text-white uppercase leading-[0.9] sm:leading-[0.88] drop-shadow-2xl">
+        <h1 className="font-display font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight text-white uppercase leading-[0.9] sm:leading-[0.88]">
           PERFORMANCE
           <br />
-          <span className="bg-gradient-to-r from-xt-red via-[#FF4D58] to-xt-purple bg-clip-text text-transparent drop-shadow-[0_10px_25px_rgba(255,27,40,0.3)]">
+          <span className="bg-gradient-to-r from-xt-red via-[#FF4D58] to-xt-purple bg-clip-text text-transparent">
             SEM LIMITES.
           </span>
         </h1>
@@ -81,7 +77,7 @@ export default function Hero() {
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           <Link
             href="#orcamento"
-            className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded bg-gradient-to-r from-xt-red via-[#E50914] to-[#B30F1A] text-white font-mono text-sm font-bold tracking-wider clip-diagonal shadow-glow-red hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
+            className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded bg-gradient-to-r from-xt-red via-[#E50914] to-[#B30F1A] text-white font-mono text-sm font-bold tracking-wider clip-diagonal shadow-glow-red hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200"
           >
             <Flame className="w-5 h-5 text-yellow-300" />
             <span>QUERO PREPARAR MINHA MOTO</span>
@@ -90,7 +86,7 @@ export default function Hero() {
 
           <Link
             href="#servicos"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-4 rounded bg-[#101017]/80 hover:bg-[#181822] text-[#E0E0EE] hover:text-white font-mono text-sm font-semibold tracking-wider border border-[#2B2B3D] hover:border-xt-purple/60 backdrop-blur-sm transition-all duration-300"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-4 rounded bg-[#101017] hover:bg-[#181822] text-[#E0E0EE] hover:text-white font-mono text-sm font-semibold tracking-wider border border-[#2B2B3D] hover:border-xt-purple/60 transition-all duration-200"
           >
             <Gauge className="w-4 h-4 text-xt-purple" />
             <span>CONHECER A XTUNE</span>
@@ -99,32 +95,32 @@ export default function Hero() {
 
         {/* Technical telemetry strip */}
         <div className="mt-12 sm:mt-16 w-full max-w-3xl pt-6 border-t border-[#1C1C26] grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
-          <div className="p-2.5 rounded bg-[#0A0A0F]/60 border border-[#1E1E2C]">
+          <div className="p-3 rounded-lg bg-[#0E0E14] border border-[#1E1E2C]">
             <p className="text-[10px] font-mono text-[#6E6E82] uppercase tracking-wider">RPM PEAK</p>
-            <p className="text-sm sm:text-base font-mono font-bold text-white flex items-center gap-1.5">
+            <p className="text-sm sm:text-base font-mono font-bold text-white flex items-center gap-1.5 mt-0.5">
               <Zap className="w-3.5 h-3.5 text-xt-red" />
               <span>14.500 RPM</span>
             </p>
           </div>
 
-          <div className="p-2.5 rounded bg-[#0A0A0F]/60 border border-[#1E1E2C]">
+          <div className="p-3 rounded-lg bg-[#0E0E14] border border-[#1E1E2C]">
             <p className="text-[10px] font-mono text-[#6E6E82] uppercase tracking-wider">RIDE-BY-WIRE</p>
-            <p className="text-sm sm:text-base font-mono font-bold text-white flex items-center gap-1.5">
+            <p className="text-sm sm:text-base font-mono font-bold text-white flex items-center gap-1.5 mt-0.5">
               <Activity className="w-3.5 h-3.5 text-xt-purple" />
               <span>RESPOSTA 1:1</span>
             </p>
           </div>
 
-          <div className="p-2.5 rounded bg-[#0A0A0F]/60 border border-[#1E1E2C]">
+          <div className="p-3 rounded-lg bg-[#0E0E14] border border-[#1E1E2C]">
             <p className="text-[10px] font-mono text-[#6E6E82] uppercase tracking-wider">TARGET AFR</p>
-            <p className="text-sm sm:text-base font-mono font-bold text-white">
+            <p className="text-sm sm:text-base font-mono font-bold text-white mt-0.5">
               12.8 — 13.0
             </p>
           </div>
 
-          <div className="p-2.5 rounded bg-[#0A0A0F]/60 border border-[#1E1E2C]">
+          <div className="p-3 rounded-lg bg-[#0E0E14] border border-[#1E1E2C]">
             <p className="text-[10px] font-mono text-[#6E6E82] uppercase tracking-wider">CALIBRAÇÃO</p>
-            <p className="text-sm sm:text-base font-mono font-bold text-xt-red">
+            <p className="text-sm sm:text-base font-mono font-bold text-xt-red mt-0.5">
               INDIVIDUALIZADA
             </p>
           </div>
@@ -133,4 +129,3 @@ export default function Hero() {
     </section>
   );
 }
-

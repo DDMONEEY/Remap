@@ -269,36 +269,36 @@ export const GALLERY_ITEMS = [
   },
   {
     id: "gal-2",
-    title: "Acerto em Dinamômetro",
-    caption: "Técnico especialista ajustando parâmetros na moto sobre o dinamômetro de rolo.",
-    image: "/images/projects/dyno-tuning.jpg",
-    category: "Laboratório"
+    title: "BMW S1000RR M-Sport",
+    caption: "Calibração fina de injeção e ride-by-wire para entrega de potência linear.",
+    image: "/images/gallery/bmw-s1000rr.jpg",
+    category: "Superbike"
   },
   {
     id: "gal-3",
-    title: "Centrais Bosch MSE6.0 & Software",
-    caption: "Bancada de desenvolvimento e testes para centrais de injeção eletrônica Bosch.",
-    image: "/images/projects/mxf-bosch.jpg",
-    category: "Eletrônica"
+    title: "Ducati Panigale V4",
+    caption: "Acerto de mapa estequiométrico para sistema de escapamento esportivo full.",
+    image: "/images/gallery/ducati-panigale.jpg",
+    category: "Track Day"
   },
   {
     id: "gal-4",
-    title: "Software XTune Lite em Operação",
-    caption: "Interface técnica de leitura e calibração para a linha Honda Denso.",
-    image: "/images/products/xtune-lite-laptop.jpg",
-    category: "Software"
+    title: "Yamaha YZF-R1 Crossplane",
+    caption: "Otimização de curvas de avanço e resposta de acelerador em alta rotação.",
+    image: "/images/gallery/superbike-r1.jpg",
+    category: "Competição"
   },
   {
     id: "gal-5",
-    title: "Identidade Visual XT Performance",
-    caption: "Grafismo oficial XT com visual underground motorsport e cores vibrantes.",
-    image: "/images/xt-banner.jpg",
-    category: "Branding"
+    title: "Aferição em Dinamômetro",
+    caption: "Monitoramento de telemetria em tempo real sob carga máxima de potência.",
+    image: "/images/gallery/dyno-exhaust.jpg",
+    category: "Laboratório Dyno"
   },
   {
     id: "gal-6",
-    title: "Equipe Planet Xtune ECU",
-    caption: "Profissionais prontos para diagnosticar, mapear e entregar performance sem limites.",
+    title: "Equipe Técnica Planet Xtune",
+    caption: "Corpo técnico especializado em eletrônica, bancada e performance de motocicletas.",
     image: "/images/about/xtune-team.jpg",
     category: "Equipe"
   }

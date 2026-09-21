@@ -8,7 +8,13 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
   webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname, "src");
@@ -17,4 +23,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-

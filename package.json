@@ -1,29 +1,37 @@
 {
-  "name": "planet-xtune-ecu",
+  "name": "planet-xtune-site",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "autoprefixer": "^10.4.20",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.18.2",
-    "lucide-react": "^0.468.0",
-    "next": "14.2.18",
-    "postcss": "^8.4.49",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "tailwind-merge": "^2.5.5",
+    "framer-motion": "^13.4.0",
+    "lucide-react": "^1.47.0",
+    "next": "^14.2.18",
+    "postcss": "^8.5.28",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.7.0",
     "tailwindcss": "^3.4.16"
   },
   "devDependencies": {
+    "typescript": "^5.7.2",
     "@types/node": "^20.17.10",
     "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "typescript": "^5.7.2"
+    "@types/react-dom": "^18.3.1"
   }
 }
